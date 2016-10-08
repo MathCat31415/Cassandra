@@ -20,7 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cassandra.h" />
+    <ClInclude Include="Element.h" />
     <ClInclude Include="Makros.h" />
+    <ClInclude Include="Nodetree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Element.cpp" />
+    <ClCompile Include="Nodetree.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{87B3C2E9-7289-412D-B0CB-E659467B56C4}</ProjectGuid>
