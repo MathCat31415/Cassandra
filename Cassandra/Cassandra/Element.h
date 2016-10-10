@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Makros.h"
+#include "Settings.h"
 
 #include <iostream>
 #include <string>

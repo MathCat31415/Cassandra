@@ -27,7 +27,6 @@ namespace Cassandra
 	void Node_Element::shutdown()
 	{
 		SAFE_DELETE(m_value);
-		std::cout << "shutdown erfolgreich!";
 	}
 
 	void Node_Element::print(std::ostream & os)
@@ -46,5 +45,20 @@ namespace Cassandra
 		return m_value;
 	}
 
+
+	Node::Node()
+	{
+		m_Rules = "Real";
+	}
+
+	void Node::set_Rules(std::string rules)
+	{
+		m_Rules = rules;
+	}
+
+	std::string Node::get_Rules()
+	{
+		return m_Rules;
+	}
 
 }

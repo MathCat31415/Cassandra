@@ -1,8 +1,9 @@
 #pragma once
 
-#include "Makros.h"
+#include "Settings.h"
 
 #include "Element.h"
+#include "Rulebook.h"
 
 namespace Cassandra
 {
@@ -10,13 +11,18 @@ namespace Cassandra
 
 	class Node
 	{
+	private:
+		std::string m_Rules;
 	public:
-		Node() { ; }
+		Node();
 		Node(const Node&) = delete;
 		virtual ~Node() { ; }
 
 		virtual void shutdown() = 0;
 		virtual void print(std::ostream& os) = 0;
+
+		virtual void set_Rules(std::string);
+		virtual std::string get_Rules();
 	};
 
 	std::ostream& operator<<(std::ostream& os, Node* obj);
