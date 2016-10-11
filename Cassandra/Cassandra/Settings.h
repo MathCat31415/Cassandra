@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Extern\easylogging++.h"
+
 
 namespace Cassandra
 {
@@ -18,8 +20,6 @@ namespace Cassandra
 	public:
 		Settings() { ; }
 		~Settings() { ; }
-
-
 
 
 	public:

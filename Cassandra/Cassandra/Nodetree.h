@@ -16,7 +16,7 @@ namespace Cassandra
 	public:
 		Node();
 		Node(const Node&) = delete;
-		virtual ~Node() { ; }
+		virtual ~Node();
 
 		virtual void shutdown() = 0;
 		virtual void print(std::ostream& os) = 0;

@@ -1,7 +1,9 @@
 #include "Settings.h"
 
 
+//#include "Extern\easylogging++.h"
 
+INITIALIZE_EASYLOGGINGPP
 
 namespace Cassandra
 {
@@ -10,13 +12,15 @@ namespace Cassandra
 
 	Settings::_init::_init()
 	{
-
+		LOG(INFO) << "---Settings_init Constructor () ---";
 	}
 
 	Settings::_init::~_init()
 	{
 		;
 	}
+
+	
 
 
 }

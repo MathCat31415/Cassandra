@@ -8,7 +8,6 @@ using namespace Cassandra;
 
 int main()
 {
-	//el::Helpers::setStorage(Cassandra::Settings::getEasyloggingStorage());
 	Rules* rule = Rulebook::get_Rules("Real");
 
 	Node *obj;
@@ -21,7 +20,7 @@ int main()
 
 	obj = new Node_Element(new Element());
 	std::cout << obj;
-	SAFE_DELETE(obj)
+	
 
 	std::cout << std::endl;
 
@@ -35,7 +34,7 @@ int main()
 	SAFE_DELETE(obj2);
 
 	std::cout << std::endl;
-
-
+	SAFE_DELETE(obj)
+	
 	system("Pause");
    }

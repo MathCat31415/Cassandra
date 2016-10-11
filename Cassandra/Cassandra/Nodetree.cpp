@@ -14,7 +14,7 @@ namespace Cassandra
 		m_value = nullptr;
 	}
 
-	Node_Element::Node_Element( Element *value)
+	Node_Element::Node_Element(Element *value)
 	{
 		m_value = value;
 	}
@@ -49,6 +49,12 @@ namespace Cassandra
 	Node::Node()
 	{
 		m_Rules = "Real";
+		LOG(DEBUG) << "Node created at " << (int)this;
+	}
+
+	Node::~Node()
+	{
+		LOG(DEBUG) << "Node deleted at " << (int)this;
 	}
 
 	void Node::set_Rules(std::string rules)
